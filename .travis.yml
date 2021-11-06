@@ -42,3 +42,8 @@ jobs:
         app: devopslab-aroldo
         on:
           branch: main
+
+    - stage: Stage Test
+      name: GET URL Stage
+      script:
+        - curl https://devopslab-aroldo.herokuapp.com/ | grep Hello || travis_terminate 1;
