@@ -10,7 +10,7 @@ python:
 
 addons:
   sonarcloud:
-    organization: aroldors aroldors
+    organization: aroldors
     token: $SONAR_API_KEY
 
 jobs:
